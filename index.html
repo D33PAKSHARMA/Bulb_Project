@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bulb_project</title>
+</head>
+<body>
+    <div class="main">
+        
+        <div>
+            <img src="./images/pic_bulboff.gif" alt="">
+
+            <button>
+                Turn On
+            </button>
+        </div>      
+
+    </div>
+
+    <script>
+        
+        const img = document.querySelector('img');
+        const btn = document.querySelector('button');
+
+
+        btn.addEventListener('click' , ()=>{
+                
+            if(img.src.match('off')){
+                    img.src = './images/pic_bulbon.gif';
+                    btn.innerHTML = 'Turn Off'
+                }else{
+                    img.src = './images/pic_bulboff.gif';
+                    btn.innerHTML = 'Turn On'
+                }
+            })
+
+    
+    </script>
+</body>
+</html>
